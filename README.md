@@ -1,18 +1,18 @@
 
-# 📊 Projeto Técnico - Olist (Programa Trainee Triggo.ai)
+# Projeto Técnico - Olist (Programa Trainee Triggo.ai)
 
-Este projeto foi desenvolvido como parte do processo seletivo para o Programa de Excelência em Engenharia de Dados e DataOps da **Triggo.ai**. O objetivo foi analisar dados da Olist, realizar tratamentos, gerar insights e construir visualizações úteis para tomada de decisão.
+Este projeto foi desenvolvido como parte do processo seletivo para o Programa de Excelência em Engenharia de Dados e DataOps da **Triggo.ai**. O objetivo foi analisar um conjunto de dados públicos de comércio eletrônico brasileiro da Olist, consistindo no tratamento dos dados, geração de insights e construção de visualizações úteis para tomada de decisão.
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```bash
 triggo-olist-project/
 │
 ├── data/                     # Dados originais (crus)
 ├── data_limpa/               # Dados tratados/limpos
-├── geojson/                  # Arquivo externo com o mapa do Brasil
+├── brazil_states.geojson     # Arquivo externo com o mapa do Brasil
 ├── notebook_parte1           # Notebook com as análises (Parte 1)
 ├── notebook_parte2           # Notebook com as análises (Parte 2)    
 ├── notebook_parte3           # Notebook com as análises (Parte 3)  
@@ -50,7 +50,7 @@ pip install pandas plotly dash scikit-learn
 
 ### 4. Execute os Notebooks
 
-Abra os arquivos da pasta `notebooks/` com Jupyter, Google Colab ou VSCode para visualizar as análises.
+Abra os arquivos `notebooks/` com Jupyter, Google Colab ou VSCode para visualizar as análises.
 
 ### 5. Visualize o Mapa Interativo
 
@@ -61,6 +61,7 @@ Execute o script com Plotly (ex: `mapa_vendas.py`) que carrega o arquivo GeoJSON
 ## Principais Resultados
 
 ### **Parte 1 – Preparação dos Dados**
+- Remoção de valores duplicados e nulos.
 - Realizado merge de tabelas e limpeza de colunas inconsistentes.
 - Arquivos tratados salvos em `data_limpa/`.
 
@@ -77,8 +78,9 @@ Execute o script com Plotly (ex: `mapa_vendas.py`) que carrega o arquivo GeoJSON
 
 ### **Parte 4 – Visualizações Interativas**
 - Visualizações com Plotly:
-  - Mapa de calor por estado (GeoJSON)
-  - Gráficos de avaliação, categorias e logística
+  - Dashboard com filtro de melhores vendedores.
+  - Mapa de calor por estado (GeoJSON).
+  - Gráficos de avaliação, categorias e logística.
 
 ---
 
